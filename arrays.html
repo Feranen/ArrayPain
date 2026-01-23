@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,54 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
-      function random() {
-        s = Math.floor(Math.random() * 100);
-        return s;
-      }
+    <script src="js/functions.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/tableActions.js"></script>
+    <script src="index.js"></script>
 
-      function swapLast(array) {
-        array.splice(array.length - 2, 2, array[array.length - 1], array[array.length - 2]);
-        return array
-      }
-
-      table = [
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-        random(),
-      ];
-
-      console.log(`Tabela: ${table}`);
-
-      console.log(table[7]);
-
-      sorted = table.sort(function (a, b) {
-        return a - b;
-      });
-
-      console.log(sorted.reverse());
-
-      console.log(table.slice(0, -1));
-      
-      rand = random()
-
-      if (rand > 69) {
-        rand = "secretInput"
-      }
-
-      table.unshift(rand)
-      console.log(table)
-
-
-      console.log(swapLast(table))
-
-    </script>
   </body>
 </html>
